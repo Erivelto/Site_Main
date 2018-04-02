@@ -1,0 +1,142 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	
+}
+
+
+
+#FormularioDeAvalicao {
+	width: 500px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+	
+}
+
+	#FormularioDeAvalicao h2, #FormularioDeAvalicao h3 {
+		font: 22px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+		color: #4c8bf5;
+		width: 100%;
+		float: left;
+		text-align: left;
+		margin-bottom: 4%;
+		font-style: italic;
+	}
+
+	#FormularioDeAvalicao h3 {
+		color: #333;
+		font-size: 16px;
+		font-style:italic;
+	}
+
+	#FormularioDeAvalicao fieldset {
+		background: white;
+		border: 0 none;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		box-shadow: 0 0 15px 1px rgba(0,0,0,0.4);
+		-moz-box-shadow: 0 0 15px 1px rgba(0,0,0,0.4);
+		-webkit-box-shadow: 0 0 15px 1px rgba(0,0,0,0.4);
+		padding: 20px 30px;
+		box-sizing: border-box;
+		width: 80%;
+		margin: 0 10%;
+		position: relative;
+	}
+
+		#FormularioDeAvalicao fieldset:not(:first-of-type) {
+			display: none;
+		}
+
+	#FormularioDeAvalicao input, #FormularioDeAvalicao textarea, #FormularioDeAvalicao select {
+		padding: 10px;
+		border: 1px solid #4c8bf5;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		outline: none;
+		box-sizing: border-box;
+		width: 100%;
+		font: 12px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+		color: #000;
+		margin-bottom: 10px;
+	}
+
+	#FormularioDeAvalicao .acao {
+		width: 90px;
+		background: #4c8bf5;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 10px 0;
+		float: left;
+		margin-right: 5%;
+		font-size:13px;
+		
+	}
+
+		#FormularioDeAvalicao .acao:hover {
+			background: #4c8bf5;
+			cursor: pointer;
+		}
+
+	#FormularioDeAvalicao #fases {
+		margin-bottom: 30px;
+		overflow: hidden;
+		counter-reset: step;
+	}
+
+		#FormularioDeAvalicao #fases li {
+			list-style-type: none;
+			color: #000;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 11px;
+			float: left;
+			width: 25%;
+			position: relative;
+			
+		}
+
+			#FormularioDeAvalicao #fases li:before {
+				content: counter(step);
+				counter-increment: step;
+				width: 30px;
+				display: block;
+				line-height: 30px;
+				background: #ccc;
+				color: #000;
+				border-radius: 15px;
+				-moz-border-radius: 15px;
+				-webkit-border-radius: 15px;
+				margin: 0 auto 10px auto;
+				
+			}
+
+			#FormularioDeAvalicao #fases li:after {
+				content: '';
+				width: 100%;
+				background: #ccc;
+				height: 2px;
+				position: absolute;
+				top: 13px;
+				left: -50%;
+				z-index: -1;
+				
+			}
+
+			#FormularioDeAvalicao #fases li:first-child::after {
+				content: none;
+			}
+
+			#FormularioDeAvalicao #fases li.ativo:before, #FormularioDeAvalicao #fases li.ativo:after {
+				background: #4c8bf5;
+				color: #000;
+				text-shadow: 0 1px 0;
+				
+			}

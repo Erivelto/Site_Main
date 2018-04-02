@@ -1,0 +1,209 @@
+﻿@{
+	ViewData["Title"] = "Services";
+
+}
+<section id="mu-contact">
+	<div class="resp">
+
+	</div>	
+	
+	<form id="FormularioDeAvalicao" name="formulario" action="" method="post">
+		<ul id="fases">
+			<li class="ativo">Dados Pessoal</li>
+			<li>Dados para Abertura da Empresa</li>
+			<li>Local da Empresa</li>
+			<li>Informaçao de Contato</li>
+		</ul>
+
+		<fieldset>
+			<h2>Dados Pessoal</h2>
+			<h3>Informe seus dados pessoal</h3>
+
+			<input type="text" id="Nome" name="nome" placeholder="Nome"  />			
+			<input type="text" id="CPF" name="cpf" placeholder="CPF" />
+			<input type="text" id="RG" name="rg" placeholder="RG"  />
+			<input type="tel" id="Phone" name="phone" placeholder="Telefone"  />			
+			<input type="email" id="Email" name="email" placeholder="E-mail	" />			
+			<input type="button" name="next1" class="next acao" value="Proximo"/>
+
+		</fieldset>
+
+		<fieldset>
+			<h2>Dados da Empresa</h2>
+			<h3>Informe dados sobre a Empresa</h3>
+			<input type="text" name="nomeempresa" placeholder="Nome da Empresa" />
+
+			<select>
+				<option value="prestador">Prestador de Servico</option>
+				<option value="prestador">Comercio</option>
+			</select>
+			<textarea rows="4" cols="50" name="descricaoempresa" placeholder="Descrição da Empresa"></textarea>
+			<input type="button" name="next2" class="next acao" value="Anterior" />
+			<input type="button" name="next2" class="next acao" value="Proximo" />
+			
+		</fieldset>
+
+		<fieldset>
+			<h2>Local da Empresa</h2>
+			<h3>Informe o endereço da Empresa</h3>
+
+			<input type="text" name="cep" id="cep" size="6" placeholder="CEP" />
+			<input type="text" name="rua" id="endereco" placeholder="Ex. Av. Pauista, 90.000" />
+			<input type="text" name="bairro" id="bairro" placeholder="Bairro" />
+			<input type="text" name="cidade" id="cidade" placeholder="Cidade" />
+			<input type="text" name="uf" id="uf" placeholder="UF" />
+			<a class="prev acao">Anterior</a>
+			<a class="next acao">Proximo</a>
+
+
+		</fieldset>
+
+		<fieldset>
+			<h2>Local da Empresa</h2>
+			<h3>Preencha o Formulario</h3>
+			<input type="text" name="end" placeholder="Ex. Av. Pauista, 90.000" />
+			<input type="text" name="bairro" placeholder="Bairro" />
+			<input type="text" name="cidade" placeholder="Cidade" />
+			<input type="text" name="uf" placeholder="UF" />
+			<input type="text" name="cep" placeholder="CEP" />
+			<a class="prev acao">Anterior</a>
+			<a class="next acao">Proximo</a>
+		</fieldset>
+
+		<fieldset>
+			<h2>Local da Empresa</h2>
+			<h3>Preencha o Formulario</h3>
+			<input type="text" name="end" placeholder="Ex. Av. Pauista, 90.000" />
+			<input type="text" name="bairro" placeholder="Bairro" />
+			<input type="text" name="cidade" placeholder="Cidade" />
+			<input type="text" name="uf" placeholder="UF" />
+			<input type="text" name="cep" placeholder="CEP" />
+			<a class="prev acao">Anterior</a>
+			<input type="submit" name="next" class="acao" value="Enviar" />
+		</fieldset>
+	</form>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<section id="mu-pricing">
+	
+				
+			
+</section>
+
+<div data-ng-controller="bilhetagemController">
+	<div class="panel panel-default">
+		<div class="panel-heading">Lista Bilhetagem</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-12">
+					<strong>{{msgErro}}</strong>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<tr>
+									<td>Codigo</td>
+									<td>Tipo Processo</td>
+									<td>Data Processo</td>
+									<td>sistema</td>
+									<td>Status</td>
+									<td>Descriçao</td>
+									<td>Valor Historico</td>
+									<td>Documento</td>
+									<td>Arquivo</td>
+									<td>Numero Processo</td>
+									<td>Verificaçao Processo</td>
+								</tr>
+								<tr data-ng-repeat="bilhetagem in ListaBilhetagem">
+									<td>{{Codigo}}</td>
+									<td>{{TipoProcesso}}</td>
+									<td>{{DataProcesso}}</td>
+									<td>{{Sistema}}</td>
+									<td>{{Status}}</td>
+									<td>{{Descricao}}</td>
+									<td>{{ValorHistorico}}</td>
+									<td>{{Documento}}</td>
+									<td>{{Arquivo}}</td>
+									<td>{{NumeroProcesso}}</td>
+									<td>{{VerificacaoProcesso}}</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>-->
+
+<style>
+	.msg-erro {
+		color: red;
+	}
+</style>
+
+@section Scripts{
+	
+<script type="text/javascript">
+	jQuery(function ($) {
+		$("#cep").change(function () {
+			var cep_code = $(this).val();
+			if (cep_code.length <= 0) return;
+			$.get("http://apps.widenet.com.br/busca-cep/api/cep.json", { code: cep_code },
+				function (result) {
+					if (result.status != 1) {
+						alert(result.message || "Houve um erro desconhecido");
+						return;
+					}
+					$("input#cep").val(result.code);
+					$("input#estado").val(result.state);
+					$("input#cidade").val(result.city);
+					$("input#bairro").val(result.district);
+					$("input#endereco").val(result.address);
+					$("input#uf").val(result.state);
+				});
+		});
+	});
+</script>
+
+
+<script>
+		$(function () {
+			var atual_fildset, next_fildset, prev_fildset;
+			var formulario = $('form[name=formulario]');
+
+			function next(elem) {
+				atual_fildset = $(elem).parent();
+				next_fildset = $(elem).parent().next();
+
+
+				$('#fases li').eq($('fieldset').index(next_fildset)).addClass('ativo');
+				atual_fildset.hide(800);
+				next_fildset.show(800);
+
+			$('.prev').click(function () {
+				atual_fildset = $(this).parent();
+				prev_fildset = $(this).parent().prev();
+
+
+				$('#fases li').eq($('fieldset').index(atual_fildset)).removeClass('ativo');
+				atual_fildset.hide(800);
+				prev_fildset.show(800);
+				});
+
+				$('input[name=next1]').click(function () {
+					var array = formulario.serializeArray();
+					if (array[0].value == '' || array[1].value == '' || array[2].value == '' || array[3].value == '' || array[4].value == '') {
+						
+						$('.resp').html('<div class="mu-error-text"><p>Preencha todos os campos!</p></div>');
+					} else {
+						$('.resp').html('');
+						next($(this));
+				}
+			});
+		});
+	</script>
+
+	
+}

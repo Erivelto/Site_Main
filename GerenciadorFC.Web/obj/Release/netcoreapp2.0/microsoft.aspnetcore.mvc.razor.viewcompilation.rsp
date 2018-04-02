@@ -1,0 +1,12 @@
+C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=GerenciadorFC.Web
+--content-root=C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web
+--file=C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web\Views\Home\About.cshtml
+--file=C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web\Views\Home\Index.cshtml
+--file=C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web\Views\Home\Services.cshtml
+--file=C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web\Views\Shared\Error.cshtml
+--file=C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web\Views\Shared\_Layout.cshtml
+--file=C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web\Views\_ViewImports.cshtml
+--file=C:\Users\Diego\Documents\GitHub\Site_Novo\GerenciadorFC.Web\Views\_ViewStart.cshtml

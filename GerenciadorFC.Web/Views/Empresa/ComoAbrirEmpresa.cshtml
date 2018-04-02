@@ -1,0 +1,262 @@
+﻿@model GerenciadorFC.Web.Models.Empresa.Empresa
+
+@using (Html.BeginForm("EnvioEmpresaNova", "Empresa", FormMethod.Post, new { @enctype = "multipart/form-data", @id = "myForm", @role = "form", @class = "mu-contact-form" }))
+{
+	<section id="mu-contact">
+		<div class="container">
+			<div class="row" id="dados">
+				<div class="col-md-12">
+					<div class="mu-contact-area">
+						<!-- Title -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="mu-title">
+									<h2>Dados pessoal</h2>
+									<p>Informe os seguintes dados.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Start Contact Content -->
+						<div class="mu-contact-content">
+							<div class="row">
+
+								<div class="col-md-12">
+									<div class="mu-contact-form-area">
+										<div id="form-messages"></div>
+
+
+										<div class="form-group">
+											<span class="fa fa-user mu-contact-icon"></span>
+											@Html.TextBoxFor(m => m.nome, new { @class = "form-control", @placeholder = "Nome", @type = "text" })
+										</div>
+
+										<div class="form-group">
+											<span class="fa fa-envelope mu-contact-icon"></span>
+											@Html.TextBoxFor(m => m.email, new { @class = "form-control", @placeholder = "Email", @type = "email" })
+										</div>
+
+										<div class="form-group">
+											<span class="fa fa-whatsapp mu-contact-icon"></span>
+											@Html.TextBoxFor(m => m.celular, new { @class = "form-control", @placeholder = "Celular", @type = "tel" })
+										</div>
+										<div class="form-group">
+											<span class="fa fa-phone mu-contact-icon"></span>
+											@Html.TextBoxFor(m => m.telefone, new { @class = "form-control", @placeholder = "Telefone", @type = "tel" })
+										</div>
+										<button type="button" class="mu-send-msg-btn" id="proximoDados"><span>Próximo</span></button>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- End Contact Content -->
+					</div>
+				</div>
+			</div>
+			<div class="row" id="empresa">
+				<div class="col-md-12">
+					<div class="mu-contact-area">
+						<!-- Title -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="mu-title">
+									<h2>Dados empresarial</h2>
+									<p>Faça a sugestão de nome para sua nova empresa.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Start Contact Content -->
+						<div class="mu-contact-content">
+							<div class="row">
+
+								<div class="col-md-12">
+									<div class="mu-contact-form-area">
+										<div id="form-messages"></div>
+
+										<div class="form-group">
+											<span class="fa fa-pencil-square-o mu-contact-icon"></span>
+											@Html.TextBoxFor(m => m.nomeFantasia, new { @class = "form-control", @placeholder = "Nome fantasia", @type = "text" })
+										</div>
+
+										<div class="form-group">
+											<span class="fa fa-pencil-square-o mu-contact-icon"></span>
+											@Html.TextBoxFor(m => m.razao, new { @class = "form-control", @placeholder = "Razão social", @type = "text" })
+										</div>
+										<button type="button" class="mu-send-msg-btn" id="anterioEmpresa"><span>Anterior</span></button>
+										<button type="button" class="mu-send-msg-btn" id="proximoEmpresa"><span>Próximo</span></button>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- End Contact Content -->
+					</div>
+				</div>
+			</div>
+			<div class="row" id="anexo">
+				<div class="col-md-12">
+					<div class="mu-contact-area">
+						<!-- Title -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="mu-title">
+									<h2>Anexo de documentos</h2>
+									<p>Para o processo de abertura ser mais eficiente, envie estes documentos.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Start Contact Content -->
+						<div class="mu-contact-content">
+							<div class="row">
+
+								<div class="col-md-12">
+									<div class="mu-contact-form-area">
+										<div id="form-messages"></div>
+
+
+										<div class="form-group">
+											<span class="fa fa-upload mu-contact-icon"></span>
+											@Html.TextBoxFor(m => m.arquivoRG, new { @class = "arquivo1", @type = "file" })
+											<input type="text" name="file" id="file1" class="file1" placeholder="RG ou CNH" readonly="readonly">
+										</div>
+										<div class="form-group">
+											<span class="fa fa-upload mu-contact-icon"></span>
+											@Html.TextBoxFor(m => m.arquivoEnd, new { @class = "arquivo2", @type = "file" })
+											<input type="text" name="file" id="file2" class="file2" placeholder="Comprovante de endereço" readonly="readonly">
+										</div>
+										<button type="button" class="mu-send-msg-btn" id="anterioAnexo"><span>Anterior</span></button>
+										<input type="submit" class="mu-send-msg-btn" value="Enviar" />
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!-- End Contact Content -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}
+
+
+
+<style>
+	.arquivo1 {
+		display: none;
+	}
+
+	.arquivo2 {
+		display: none;
+	}
+
+	.file1 {
+		line-height: 30px;
+		height: 30px;
+		border: 1px solid #A7A7A7;
+		padding: 5px;
+		box-sizing: border-box;
+		font-size: 15px;
+		vertical-align: middle;
+		width: 400px;
+	}
+
+	.file2 {
+		line-height: 30px;
+		height: 30px;
+		border: 1px solid #A7A7A7;
+		padding: 5px;
+		box-sizing: border-box;
+		font-size: 15px;
+		vertical-align: middle;
+		width: 400px;
+	}
+
+	.btn {
+		border: none;
+		box-sizing: border-box;
+		padding: 2px 10px;
+		background-color: #2591d8;
+		color: #2591d8;
+		height: 32px;
+		font-size: 15px;
+		vertical-align: middle;
+	}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script>
+	$('.file2').on('click', function () {
+		$('.arquivo2').trigger('click');
+	});
+
+	$('.arquivo2').on('change', function () {
+		var fileName = $(this)[0].files[0].name;
+		$('#file2').val(fileName);
+	});
+	$('.file1').on('click', function () {
+		$('.arquivo1').trigger('click');
+	});
+
+	$('.arquivo1').on('change', function () {
+		var fileName = $(this)[0].files[0].name;
+		$('#file1').val(fileName);
+	});
+	jQuery("#celular")
+		.mask("(99) 9999-9999?9")
+		.focusout(function (event) {
+			var target, phone, element;
+			target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+			phone = target.value.replace(/\D/g, '');
+			element = $(target);
+			element.unmask();
+			if (phone.length > 10) {
+				element.mask("(99) 99999-999?9");
+			} else {
+				element.mask("(99) 9999-9999?9");
+			}
+		});
+	jQuery("#telefone")
+		.mask("(99) 9999-9999?9")
+		.focusout(function (event) {
+			var target, phone, element;
+			target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+			phone = target.value.replace(/\D/g, '');
+			element = $(target);
+			element.unmask();
+			if (phone.length > 10) {
+				element.mask("(99) 99999-999?9");
+			} else {
+				element.mask("(99) 9999-9999?9");
+			}
+		});
+
+	var nome = $("#nome").val();
+	var email = $("#email").val();
+	var celular = $("#celular").val();
+	var nomeFantasia = $("#nomeFantasia").val();
+	var razao = $("#razao").val();
+	$("#empresa").hide();
+	$("#anexo").hide();
+	$("#proximoDados").click(function () {
+		$("#empresa").show();
+		$("#dados").hide();
+	});
+	$("#anterioEmpresa").click(function () {
+		$("#empresa").hide();
+		$("#dados").show();
+	});
+	$("#proximoEmpresa").click(function () {
+		$("#empresa").hide();
+		$("#anexo").show();
+	});
+	$("#anterioAnexo").click(function () {
+		$("#empresa").show();
+		$("#anexo").hide();
+	});
+</script>
+
+

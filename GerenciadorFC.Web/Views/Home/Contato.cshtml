@@ -1,0 +1,65 @@
+﻿
+@using (Html.BeginForm("ContatoEnvio", "Home", FormMethod.Post, new { @id = "myForm", @role = "form", @class = "mu-contact-form" }))
+{
+	<main>
+		<!-- Start Contact -->
+		<section id="mu-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-contact-area">
+							<!-- Title -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="mu-title">
+										<h2>Fale conosco!</h2>
+										<p>Em breve retornaremos o seu contato atendendo a sua solicitação.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Start Contact Content -->
+							<div class="mu-contact-content">
+								<div class="row">
+
+									<div class="col-md-12">
+										<div class="mu-contact-form-area">
+											<div id="form-messages"></div>
+
+
+											<div class="form-group">
+												<span class="fa fa-user mu-contact-icon"></span>
+												<input type="text" class="form-control" placeholder="Nome" id="nome" name="nome" required>
+											</div>
+
+											<div class="form-group">
+												<span class="fa fa-envelope mu-contact-icon"></span>
+												<input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+											</div>
+
+											<div class="form-group">
+												<span class="fa fa-folder-open-o mu-contact-icon"></span>
+												<input type="text" class="form-control" placeholder="Asssunto" id="assunto" name="assunto" required>
+											</div>
+
+											<div class="form-group">
+												<span class="fa fa-pencil-square-o mu-contact-icon"></span>
+												<textarea class="form-control" placeholder="Mensagem" id="mensagem" name="mensagem" required></textarea>
+											</div>
+											<button type="submit" class="mu-send-msg-btn"><span>Enviar</span></button>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- End Contact Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+}
+
+
+
