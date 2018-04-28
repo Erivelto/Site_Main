@@ -319,7 +319,7 @@ a:focus,
 /*--------------------*/
 
 #mu-hero {
-	background-color: #f8f9fa;
+	background-color: #F8F8F8;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -2967,7 +2967,7 @@ a:focus,
 	}
 
 	.mu-navbar .navbar-toggler {
-		color: #fff;
+		color: #0277bd;
 		border-color: #fff;
 		cursor: pointer;
 		padding: 10px 15px;

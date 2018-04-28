@@ -28,16 +28,19 @@
 										<div class="form-group">
 											<span class="fa fa-user mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.nome, new { @class = "form-control", @placeholder = "Nome", @type = "text" })
+											<span asp-validation-for="nome" class="text-danger"></span>
 										</div>
 
 										<div class="form-group">
 											<span class="fa fa-envelope mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.email, new { @class = "form-control", @placeholder = "Email", @type = "email" })
+											<span asp-validation-for="email" class="text-danger"></span>
 										</div>
 
 										<div class="form-group">
 											<span class="fa fa-whatsapp mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.celular, new { @class = "form-control", @placeholder = "Celular", @type = "tel" })
+											<span asp-validation-for="celular" class="text-danger"></span>
 										</div>
 										<div class="form-group">
 											<span class="fa fa-phone mu-contact-icon"></span>
@@ -119,12 +122,14 @@
 										<div class="form-group">
 											<span class="fa fa-upload mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.arquivoRG, new { @class = "arquivo1", @type = "file" })
-											<input type="text" name="file" id="file1" class="file1" placeholder="RG ou CNH" readonly="readonly">
+											<input type="text" name="file" id="file1" class="file1" placeholder="Anexar RG ou CNH" readonly="readonly">
+											<span asp-validation-for="arquivoRG" class="text-danger alterVisao"></span>
 										</div>
 										<div class="form-group">
 											<span class="fa fa-upload mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.arquivoEnd, new { @class = "arquivo2", @type = "file" })
-											<input type="text" name="file" id="file2" class="file2" placeholder="Comprovante de endereço" readonly="readonly">
+											<input type="text" name="file" id="file2" class="file2" placeholder="Anexar imagem dos dados IPTU" readonly="readonly">
+											<span asp-validation-for="arquivoRG" class="text-danger alterVisao"></span>
 										</div>
 										<button type="button" class="mu-send-msg-btn" id="anterioAnexo"><span>Anterior</span></button>
 										<input type="submit" class="mu-send-msg-btn" value="Enviar" />
@@ -161,7 +166,7 @@
 		box-sizing: border-box;
 		font-size: 15px;
 		vertical-align: middle;
-		width: 400px;
+		width: 430px;
 	}
 
 	.file2 {
@@ -172,7 +177,7 @@
 		box-sizing: border-box;
 		font-size: 15px;
 		vertical-align: middle;
-		width: 400px;
+		width: 430px;
 	}
 
 	.btn {
@@ -189,6 +194,14 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 <script>
+	$(document).ready(function () {
+		var valor = $(".alterVisao").text();
+		if (valor != "") { 
+			$("#empresa").hide();
+			$("#dados").hide();
+			$("#anexo").show();
+		}
+	});
 	$('.file2').on('click', function () {
 		$('.arquivo2').trigger('click');
 	});

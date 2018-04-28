@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Site_Novo\GerenciadorFC.Web\obj\Release\netcoreapp2.0\PubTmp\Out\" />
+  <IisApp path="C:\Main\Site_Main\GerenciadorFC.Web\obj\Release\netcoreapp2.0\PubTmp\Out\" />
 </sitemanifest>
