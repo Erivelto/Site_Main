@@ -113,7 +113,7 @@ namespace GerenciadorFC.Web.Controllers
 			}
 			else
 			{
-				return View();
+				return View("JaExisteEmpresa");
 			}
 
 		}

@@ -11,7 +11,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="mu-title">
-									<h2>Dados empresarial</h2>
+									<h2>Dados empresariais</h2>
 									<p>Informe os seguintes dados.</p>
 								</div>
 							</div>
@@ -28,22 +28,26 @@
 										<div class="form-group">
 											<span class="fa fa-user mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.nome, new { @class = "form-control", @placeholder = "Nome", @type = "text" })
+											<span asp-validation-for="nome" class="text-danger alterVisao"></span>
 										</div>
 
 										<div class="form-group">
 											<span class="fa fa-envelope mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.email, new { @class = "form-control", @placeholder = "Email", @type = "email" })
+											<span asp-validation-for="email" class="text-danger alterVisao"></span>
 										</div>
 
 										<div class="form-group">
 											<span class="fa fa-whatsapp mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.celular, new { @class = "form-control", @placeholder = "Celular", @type = "tel" })
+											<span asp-validation-for="celular" class="text-danger alterVisao"></span>
 										</div>
 										<div class="form-group">
 											<span class="fa fa-pencil-square-o mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.cnpj, new { @class = "form-control", @placeholder = "CNPJ", @type = "text" })
+											<span asp-validation-for="cnpj" class="text-danger alterVisao"></span>
 										</div>
-										<button type="submit" class="mu-send-msg-btn" id="proximoDados"><span>Enviar</span></button>
+										<button type="submit" class="mu-send-msg-btn" id="proximoDados" ><span>Enviar</span></button>
 
 									</div>
 								</div>
@@ -62,6 +66,14 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 <script>
+	//$(document).ready(function () {
+	//	//$('#proximoDados').prop('disabled', true);
+	//	$('#email').keyup(function () {
+	//		if ($(this).val() != '') {
+	//			$('#proximoDados').prop('disabled', false);
+	//		}
+	//	});
+	//});
 	jQuery("#celular")
 		.mask("(99) 9999-9999?9")
 		.focusout(function (event) {
