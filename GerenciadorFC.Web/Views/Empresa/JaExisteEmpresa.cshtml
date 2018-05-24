@@ -47,7 +47,7 @@
 											@Html.TextBoxFor(m => m.cnpj, new { @class = "form-control", @placeholder = "CNPJ", @type = "text" })
 											<span asp-validation-for="cnpj" class="text-danger alterVisao"></span>
 										</div>
-										<button type="submit" class="mu-send-msg-btn" id="proximoDados" ><span>Enviar</span></button>
+										<button type="submit" class="mu-send-msg-btn" id="proximoDados"><span>Enviar</span></button>
 
 									</div>
 								</div>
@@ -63,8 +63,8 @@
 	</section>
 }
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="~/cdn/jquery11.min.js"></script>
+<script src="~/cdn/jquery.maskedinput.min.js"></script>
 <script>
 	//$(document).ready(function () {
 	//	//$('#proximoDados').prop('disabled', true);

@@ -81,7 +81,7 @@ namespace WebSite.Controllers
 		{
 			MailMessage mail = new MailMessage();
 
-			mail.From = new MailAddress("contfy@contfy.com.brm");
+			mail.From = new MailAddress("contato@contfy.com.br");
 			mail.To.Add("contato@contfy.com.br");
 
 			mail.Subject = assunto;
@@ -93,7 +93,7 @@ namespace WebSite.Controllers
 			smtp.EnableSsl = true;
 			smtp.Port = 587;
 			//smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-			smtp.Credentials = new NetworkCredential("contfy@contfy.com.br", "erivelto33");
+			smtp.Credentials = new NetworkCredential("contato@contfy.com.br", "erivelto33");
 			smtp.Send(mail);
 			RedirectToActionResult redirectResult = new RedirectToActionResult("ContatoEmpresa", "Empresa",null);
 			return redirectResult;

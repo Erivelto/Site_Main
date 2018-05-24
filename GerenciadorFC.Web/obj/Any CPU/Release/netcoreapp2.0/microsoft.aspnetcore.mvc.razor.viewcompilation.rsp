@@ -10,6 +10,7 @@ C:\Main\Site_Main\GerenciadorFC.Web
 --file=C:\Main\Site_Main\GerenciadorFC.Web\Views\Empresa\EmpresaBasica.cshtml
 --file=C:\Main\Site_Main\GerenciadorFC.Web\Views\Empresa\EnvioEmpresaNova.cshtml
 --file=C:\Main\Site_Main\GerenciadorFC.Web\Views\Empresa\JaExisteEmpresa.cshtml
+--file=C:\Main\Site_Main\GerenciadorFC.Web\Views\Empresa\TypeWriter.cshtml
 --file=C:\Main\Site_Main\GerenciadorFC.Web\Views\Home\About.cshtml
 --file=C:\Main\Site_Main\GerenciadorFC.Web\Views\Home\Contato.cshtml
 --file=C:\Main\Site_Main\GerenciadorFC.Web\Views\Home\FormularioDeAvalicao.cshtml

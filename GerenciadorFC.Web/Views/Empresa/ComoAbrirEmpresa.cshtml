@@ -46,7 +46,7 @@
 											<span class="fa fa-phone mu-contact-icon"></span>
 											@Html.TextBoxFor(m => m.telefone, new { @class = "form-control", @placeholder = "Telefone", @type = "tel" })
 										</div>
-										<button type="button" class="mu-send-msg-btn" id="proximoDados" ><span>Próximo</span></button>
+										<button type="button" class="mu-send-msg-btn" id="proximoDados"><span>Próximo</span></button>
 
 									</div>
 								</div>
@@ -191,12 +191,12 @@
 		vertical-align: middle;
 	}
 </style>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="~/cdn/jquery11.min.js"></script>
+<script src="~/cdn/jquery.maskedinput.min.js"></script>
 <script>
 	$(document).ready(function () {
 		var valor = $(".alterVisao").text();
-		if (valor != "") { 
+		if (valor != "") {
 			$("#empresa").hide();
 			$("#dados").hide();
 			$("#anexo").show();
