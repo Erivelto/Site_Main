@@ -1,0 +1,26 @@
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.deps.json
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.runtimeconfig.json
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.runtimeconfig.dev.json
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.dll
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.pdb
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.csprojAssemblyReference.cache
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.csproj.CoreCompileInputs.cache
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.AssemblyInfoInputs.cache
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.AssemblyInfo.cs
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.dll
+c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.pdb
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.deps.json
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.runtimeconfig.json
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.runtimeconfig.dev.json
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.dll
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.pdb
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.dll
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\Uol.PagSeguro.dll
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.pdb
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Debug\netcoreapp2.0\Uol.PagSeguro.pdb
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.csprojResolveAssemblyReference.cache
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.csproj.CoreCompileInputs.cache
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.AssemblyInfoInputs.cache
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.AssemblyInfo.cs
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.dll
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.pdb
