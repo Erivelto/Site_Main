@@ -12,7 +12,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
     public class GeracaoCobrancaGerenciaNet
     {
 
-		private string GeraTransacao(string Nome, decimal Valor, int Quantidade, dynamic endpoints)
+		private string GeraTransacao(string Nome, int Valor, int Quantidade, dynamic endpoints)
 		{
 			var body = new
 			{
@@ -27,6 +27,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 			try
 			{
 				var response = endpoints.CreateCharge(null, body);
+				var result = JsonConvert.DeserializeObject<string>(response);
 			}
 			catch (Exception ex)
 			{
@@ -34,7 +35,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 			}			
 			return "";
 		}
-		public string GeraBoleto(string documento, string nome, string email, string telefone,  decimal valor, dynamic endpoints)
+		public string GeraBoleto(string documento, string nome, string email, string telefone,  int valor, dynamic endpoints)
 		{
 			string idTransacao = GeraTransacao(nome, valor, 1,endpoints);
 
