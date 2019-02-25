@@ -22,6 +22,11 @@ namespace GerenciadorFC.Cobranca.Servico.Controllers
 		{
 			return servico.ConsultaTransacao(codigo);
 		}
+		[HttpGet("ConsultaTransacaoStatus/Codigo/{codigo}")]
+		public int GetStatus(string codigo)
+		{
+			return servico.ConsultaTransacaoStatus(codigo);
+		}
 		[HttpGet("Boleto/Documento/{documento}/Nome/{nome}/Email/{email}/Telefone/{telefone}/CodigoHash/{codigoHash}/Valor/{valor}")]
 		public string GetBoleto(string documento, string nome, string email, string telefone, string codigoHash, decimal valor)
 		{
@@ -46,6 +51,16 @@ namespace GerenciadorFC.Cobranca.Servico.Controllers
 		public bool GetConsultaRecorrenteRef(String reference)
 		{
 			return servico.ConsultaRecorrenteRef(reference);
+		}
+		[HttpGet("ConsultaAssintura/{reference}")]
+		public PessoaAssinatura ConsultaAssintura(string reference)
+		{
+			return servico.ConsultaAssintura(reference);
+		}
+		[HttpGet("ConsultaRecorrenteNotificacao/{code}")]
+		public PreApprovalTransaction ConsultaRecorrenteNotificacao(string code)
+		{
+			return servico.ConsultaRecorrenteNotificacao(code);
 		}
 		[HttpGet("ConsultaDevedores")]
 		public List<Pessoa> ConsultaDevedores()

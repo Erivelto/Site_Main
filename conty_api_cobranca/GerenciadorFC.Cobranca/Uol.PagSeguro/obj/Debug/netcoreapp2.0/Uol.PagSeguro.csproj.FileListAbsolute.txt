@@ -24,4 +24,4 @@ C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\De
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Debug\netcoreapp2.0\Uol.PagSeguro.AssemblyInfo.cs
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Debug\netcoreapp2.0\Uol.PagSeguro.dll
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Debug\netcoreapp2.0\Uol.PagSeguro.pdb
-C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Debug\netcoreapp2.0\Uol.PagSeguro.csprojResolveAssemblyReference.cache
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Debug\netcoreapp2.0\Uol.PagSeguro.csprojAssemblyReference.cache

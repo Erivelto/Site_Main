@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "0a224b6726aac1be4f24ae0426627af0cfbc378a"
+    "signature": "ca9ae33378c7cc1f9e79cad59a7b27b822702a15"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
       "GerenciadorFC.Cobranca.Servico/1.0.0": {
         "dependencies": {
           "GerenciadorFC.Cobranca.Dominio": "1.0.0",
+          "Gerencianet.SDK": "1.0.6",
           "Microsoft.AspNetCore.All": "2.0.8",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2",
@@ -36,6 +37,18 @@
         },
         "compile": {
           "GerenciadorFC.Cobranca.Servico.dll": {}
+        }
+      },
+      "Gerencianet.SDK/1.0.6": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "runtime": {
+          "lib/net461/Gerencianet.SDK.dll": {}
+        },
+        "compile": {
+          "lib/net461/Gerencianet.SDK.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4322,6 +4335,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Gerencianet.SDK/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PvOI22AKglXenAcxG/ywPcqXI2Knv3Sk/VQUqT4xLOoGOv/vcnbF5R1kUMm7Bk3Tnf0q9js8pKaJMFcvbmdJwg==",
+      "path": "gerencianet.sdk/1.0.6",
+      "hashPath": "gerencianet.sdk.1.0.6.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",

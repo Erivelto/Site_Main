@@ -7,9 +7,11 @@ C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobran
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Release\netcoreapp2.0\Uol.PagSeguro.dll
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Release\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.pdb
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\bin\Release\netcoreapp2.0\Uol.PagSeguro.pdb
-C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Release\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.csprojResolveAssemblyReference.cache
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Release\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.csproj.CoreCompileInputs.cache
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Release\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.AssemblyInfoInputs.cache
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Release\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.AssemblyInfo.cs
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Release\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.dll
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Release\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.pdb
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Release\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.csprojAssemblyReference.cache
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Servico\obj\Release\netcoreapp2.0\GerenciadorFC.Cobranca.Servico.csproj.CopyComplete

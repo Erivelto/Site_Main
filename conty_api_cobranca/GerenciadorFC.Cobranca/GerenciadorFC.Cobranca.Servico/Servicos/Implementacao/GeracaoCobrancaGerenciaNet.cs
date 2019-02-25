@@ -27,13 +27,14 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 			try
 			{
 				var response = endpoints.CreateCharge(null, body);
-				var result = JsonConvert.DeserializeObject<string>(response);
+				var value  = response["data"]["charge_id"];
+				var retorno = value.Value;
+				return retorno.ToString();
 			}
 			catch (Exception ex)
 			{
 				return ex.Message;
 			}			
-			return "";
 		}
 		public string GeraBoleto(string documento, string nome, string email, string telefone,  int valor, dynamic endpoints)
 		{
@@ -64,8 +65,18 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
                     }
                 }
             };
-            var response = endpoints.PayCharge(param, body);
-			return "";
+			try
+			{
+				var response = endpoints.PayCharge(param, body);
+				var retorno = "";
+				return retorno;
+			}
+			catch (Exception ex)
+			{
+				return ex.Message.ToString();
+			}
+
+			
 		}
 		private void GravaTranascao(string transacao, string documento,DateTime data)
 		{

@@ -19,9 +19,9 @@ C:\Main\Site_Main\contfy_administrativo\GerenciadorFC.Administrativo\Uol.PagSegu
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\bin\Release\netcoreapp2.0\Uol.PagSeguro.deps.json
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\bin\Release\netcoreapp2.0\Uol.PagSeguro.dll
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\bin\Release\netcoreapp2.0\Uol.PagSeguro.pdb
-C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Release\netcoreapp2.0\Uol.PagSeguro.csprojResolveAssemblyReference.cache
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Release\netcoreapp2.0\Uol.PagSeguro.csproj.CoreCompileInputs.cache
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Release\netcoreapp2.0\Uol.PagSeguro.AssemblyInfoInputs.cache
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Release\netcoreapp2.0\Uol.PagSeguro.AssemblyInfo.cs
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Release\netcoreapp2.0\Uol.PagSeguro.dll
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Release\netcoreapp2.0\Uol.PagSeguro.pdb
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\Uol.PagSeguro\obj\Release\netcoreapp2.0\Uol.PagSeguro.csprojAssemblyReference.cache

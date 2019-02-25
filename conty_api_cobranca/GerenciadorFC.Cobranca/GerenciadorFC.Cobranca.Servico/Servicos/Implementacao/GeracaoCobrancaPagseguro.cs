@@ -211,6 +211,24 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 				return null;
 			}
 		}
+		public int ConsultaTransacaoStatus(string transacao)
+		{
+			bool isSandbox = false;
+			EnvironmentConfiguration.ChangeEnvironment(isSandbox);
+			AccountCredentials credentials = PagSeguroConfiguration.Credentials(isSandbox);
+			string transactionCode = transacao;
+			try
+			{
+				Transaction transaction = TransactionSearchService.SearchByCode(
+						   credentials,
+						   transactionCode);
+				return transaction.TransactionStatus;
+			}
+			catch (PagSeguroServiceException exception)
+			{
+				return 0;
+			}
+		}
 		public TransactionSearchResult ConsultaTransacaoDate(DateTime InitialDate, DateTime FinalDate)
 		{
 			bool isSandbox = false;
@@ -231,6 +249,79 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 					pageNumber,
 					maxPageResults);
 			return result;
+		}
+		public PreApprovalTransaction ConsultaRecorrenteNotificacao(string code)
+		{
+			bool isSandbox = false;
+			EnvironmentConfiguration.ChangeEnvironment(isSandbox);
+			try
+			{
+				AccountCredentials credentials = PagSeguroConfiguration.Credentials(isSandbox);
+
+				PreApprovalTransaction result = PreApprovalSearchService.SearchByNofication(credentials, code);
+
+				return result;
+			
+			}
+			catch (PagSeguroServiceException exception)
+			{
+				return null;
+			}
+		}
+		public PessoaAssinatura ConsultaAssintura(string reference)
+		{
+			
+			bool isSandbox = false;
+			EnvironmentConfiguration.ChangeEnvironment(isSandbox);
+
+			var myTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Pacific Standard Time");
+			DateTime initialDate = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow.AddMonths(-12), myTimeZone);
+			DateTime finalDate = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, myTimeZone);
+			int maxPageResults = 10;
+			int pageNumber = 1;
+			AccountCredentials credentials = PagSeguroConfiguration.Credentials(isSandbox);
+			try
+			{
+				PreApprovalSearchResult result =
+					PreApprovalSearchService.SearchByReference(
+						credentials,
+						reference,
+						initialDate,
+						finalDate,
+						pageNumber,
+						maxPageResults
+					);
+				var pessoa = new PessoaAssinatura();
+
+				var resultAtive = result.PreApprovals.Where(m => m.Status == "ACTIVE").FirstOrDefault();
+				if (resultAtive != null)
+				{
+					pessoa.Codigo = 0;
+					pessoa.CodigoPessoa = 0;
+					pessoa.CodigoAssinatura = resultAtive.Code;
+					pessoa.Status = resultAtive.Status;
+					pessoa.DataAssinatura = resultAtive.Date;
+
+					return pessoa;
+				}
+				else
+				{
+					var resultNoAtive = result.PreApprovals.OrderByDescending(d => d.Date).FirstOrDefault();
+					pessoa.Codigo = 0;
+					pessoa.CodigoPessoa = 0;
+					pessoa.CodigoAssinatura = resultNoAtive.Code;
+					pessoa.Status = resultNoAtive.Status;
+					pessoa.DataAssinatura = resultNoAtive.Date;
+
+					return pessoa;
+				}
+
+
+			}
+			catch (Exception)
+			{
+				return null;
+			}
 		}
 		public bool ConsultaRecorrenteRef(String reference)
 		{
@@ -256,6 +347,9 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 						pageNumber,
 						maxPageResults
 					);
+				
+
+			
 
 				if (result.PreApprovals.Count > 1)
 				{
@@ -311,7 +405,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 
 				foreach (var item in result.Transactions.Where(m => m.LastEventDate.Month == dataAtual.Month && m.LastEventDate.Year == dataAtual.Year))
 				{
-					if (item.LastEventDate.Day < DateTime.Now.Day && item.TransactionStatus != 3)
+					if (item.TransactionStatus != 3)
 					{
 						valida = false;
 					}
