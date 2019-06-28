@@ -10,9 +10,9 @@ c:\users\fabio.simoes.ext\documents\visual studio 2017\Projects\GerenciadorFC.Co
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.deps.json
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.dll
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\bin\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.pdb
+C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.csprojAssemblyReference.cache
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.csproj.CoreCompileInputs.cache
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.AssemblyInfoInputs.cache
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.AssemblyInfo.cs
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.dll
 C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.pdb
-C:\Main\Site_Main\conty_api_cobranca\GerenciadorFC.Cobranca\GerenciadorFC.Cobranca.Dominio\obj\Debug\netcoreapp2.0\GerenciadorFC.Cobranca.Dominio.csprojAssemblyReference.cache

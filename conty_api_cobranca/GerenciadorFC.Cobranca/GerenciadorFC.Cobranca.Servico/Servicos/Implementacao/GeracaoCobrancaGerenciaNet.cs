@@ -38,7 +38,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 		}
 		public string GeraBoleto(string documento, string nome, string email, string telefone,  int valor, dynamic endpoints)
 		{
-			string idTransacao = GeraTransacao(nome, valor, 1,endpoints);
+			string idTransacao = GeraTransacao("Contabilidade Online", valor, 1,endpoints);
 
             var param = new
             {
@@ -53,13 +53,15 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
                         expire_at =  DateTime.Now.AddDays(2).ToString("yyy-MM-dd"),
                         customer = new
                         {
-                            name = nome,
+                            name = "Contabilidade Online",
                             email = email,
+							
                             cpf ="27952666878",
-                            birth = "17/03/1979",
-                            phone_number = "20862051",
+                            birth = "1979-03-17",
+                            phone_number = "5144916523",
 							juridical_person = new {
-
+								corporate_name = "Teste",
+								cnpj = "27308027000100"
 							}
 						}
                     }

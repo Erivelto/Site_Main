@@ -179,7 +179,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 		{
 			var endereco = new Endereco();
 
-			var client = new RestClient("https://gerenciadorfccadastroservicos20180317071207.azurewebsites.net/api/Pessoa/Documento/" + cnpj.Replace(".", "").Replace("-", "").Replace("/", ""));
+			var client = new RestClient("https://gerenciadorfccontfyapi.azurewebsites.net/api/Pessoa/Documento/" + cnpj.Replace(".", "").Replace("-", "").Replace("/", ""));
 			var request = new RestRequest();
 
 			request.Method = Method.GET;
@@ -464,7 +464,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 
 			var body = JsonConvert.SerializeObject(_transacao);
 
-			var client = new RestClient("https://gerenciadorfccadastroservicos20180317071207.azurewebsites.net/api/PessoaCobranca");
+			var client = new RestClient("https://gerenciadorfccontfyapi.azurewebsites.net/api/PessoaCobranca");
 			var request = new RestRequest();
 
 			request.Method = Method.POST;
@@ -532,7 +532,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 		}
 		public List<Pessoa> ListaCliente()
 		{
-			var client = new RestClient("https://gerenciadorfccadastroservicos20180317071207.azurewebsites.net/api/Pessoa");
+			var client = new RestClient("https://gerenciadorfccontfyapi.azurewebsites.net/api/Pessoa");
 			var request = new RestRequest();
 
 			request.Method = Method.GET;
