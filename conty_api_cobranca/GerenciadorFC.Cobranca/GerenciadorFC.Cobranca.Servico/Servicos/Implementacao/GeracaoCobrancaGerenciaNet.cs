@@ -1,6 +1,8 @@
-﻿using Gerencianet.SDK;
+﻿using GerenciadorFC.Cobranca.Dominio;
+using Gerencianet.SDK;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -36,8 +38,9 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 				return ex.Message;
 			}			
 		}
-		public string GeraBoleto(string documento, string nome, string email, string telefone,  int valor, dynamic endpoints)
+		public Data GeraBoleto(string cpf,string cnpj, string nome, string email, string telefone,  int valor, dynamic endpoints, DateTime vencimento)
 		{
+			var boleto = new BoletoCliente();
 			string idTransacao = GeraTransacao("Contabilidade Online", valor, 1,endpoints);
 
             var param = new
@@ -50,18 +53,16 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
                 {
                     banking_billet = new
                     {
-                        expire_at =  DateTime.Now.AddDays(2).ToString("yyy-MM-dd"),
+                        expire_at = DateTime.Now.AddDays(2).ToString("yyyy-MM-dd"),
                         customer = new
                         {
-                            name = "Contabilidade Online",
-                            email = email,
-							
-                            cpf ="27952666878",
-                            birth = "1979-03-17",
-                            phone_number = "5144916523",
+
 							juridical_person = new {
-								corporate_name = "Teste",
-								cnpj = "27308027000100"
+								corporate_name = nome,
+								cnpj = cnpj,
+								email = email,
+								birth = "1980-03-01",
+								phone_number = telefone,
 							}
 						}
                     }
@@ -70,12 +71,15 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 			try
 			{
 				var response = endpoints.PayCharge(param, body);
-				var retorno = "";
-				return retorno;
+				var resultData = response["data"]; 
+				
+				var result = resultData.ToObject<Data>();
+
+				return result;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
-				return ex.Message.ToString();
+				throw;
 			}
 
 			
