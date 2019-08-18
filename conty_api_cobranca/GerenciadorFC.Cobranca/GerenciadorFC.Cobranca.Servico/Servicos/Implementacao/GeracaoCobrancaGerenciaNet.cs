@@ -53,16 +53,15 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
                 {
                     banking_billet = new
                     {
-                        expire_at = DateTime.Now.AddDays(2).ToString("yyyy-MM-dd"),
+                        expire_at = "2019-08-20",//DateTime.Now.AddDays(3).ToString("yyyy-MM-dd"),
                         customer = new
                         {
-
+							email = email,
+							birth = "1980-03-01",
+							phone_number = telefone,
 							juridical_person = new {
 								corporate_name = nome,
-								cnpj = cnpj,
-								email = email,
-								birth = "1980-03-01",
-								phone_number = telefone,
+								cnpj = cnpj							
 							}
 						}
                     }
