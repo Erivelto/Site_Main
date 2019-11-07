@@ -38,7 +38,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
 				return ex.Message;
 			}			
 		}
-		public Data GeraBoleto(string cpf,string cnpj, string nome, string email, string telefone,  int valor, dynamic endpoints, DateTime vencimento)
+		public Data GeraBoleto(string cpf,string cnpj, string nome, string email, string telefone,  int valor, dynamic endpoints, string vencimento)
 		{
 			var boleto = new BoletoCliente();
 			string idTransacao = GeraTransacao("Contabilidade Online", valor, 1,endpoints);
@@ -53,7 +53,7 @@ namespace GerenciadorFC.Cobranca.Servico.Servicos
                 {
                     banking_billet = new
                     {
-                        expire_at = "2019-08-20",//DateTime.Now.AddDays(3).ToString("yyyy-MM-dd"),
+                        expire_at = vencimento,
                         customer = new
                         {
 							email = email,
